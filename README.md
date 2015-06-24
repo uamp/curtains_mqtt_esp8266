@@ -25,7 +25,7 @@ Curtain controller using ESP8266, nodemcu and LUA script
 
 ## Notes
 
-_COMPILE:_ mqtt.lua, wifi.lua and motorfunctions.lua all need to be byte compiled to .lc to work.  ESPLORER (or others) can handle this with ease.
+_COMPILE:_ mqtt.lua, wifi.lua and motorfunctions.lua all need to be byte compiled to .lc to work.  ESPlorer (or others) can handle this with ease.
 
 Enter your SSID and MQTT server details and edit the pin definitions as necessary.
 
