@@ -39,3 +39,7 @@ On initial startup it doesn't know what position the curtains are in.  This can 
 * Reed switch: connect between pin and ground (uses internal pullup and interrupt routine with debouncing)
 * Manual switch: SPDT: Double throw.  Ie, put common pin to ground, and either "throw" to swup and swdown pins on the esp respectively.  Again, internal pullup is used.
 * ADC pin: Have 330/150ohm voltage dividor to bring 3.3v down to 1.1v (ish) then further divided that with LDR and POT to vary light dependant voltage between 0 and 1.1v.  This raw value is then put over MQTT.  A back end automation server (in my case openhab) uses this value in conjuction with knowledge of sunrise/sunset to determine if curtains should be up/down
+
+### Hardware
+
+TO COME: will be posting 3D print design for motor housing and pulley design and circuit diagram (all be it, v simple)
