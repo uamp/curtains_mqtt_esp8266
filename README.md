@@ -1,6 +1,6 @@
 # Curtain Controller
 
-Curtain controller using ESP8266 &amp; nodemcu
+Curtain controller using ESP8266, nodemcu and LUA script
 
 ## Features:
 * Controls curtains using a bi-directional DC motor (hooked up to H-bridge, L293D chip).  
