@@ -2,7 +2,7 @@
 
 Curtain controller using ESP8266, nodemcu and LUA script
 
-## Features:
+## Features
 * Controls curtains using a bi-directional DC motor (hooked up to H-bridge, L293D chip).  
 * Uses a reed switch (attached to the lazy pulley) to count number or revolutions to determine curtain position.
 * Has timeout if limit of travel reached and no reed contact seen (ie lazy pulley has stopped/jammed).
@@ -12,18 +12,18 @@ Curtain controller using ESP8266, nodemcu and LUA script
 * Compatible with any home automation software that uses MQTT (I use openhab, but any could be used)
 
 ## MQTT Topics
-### Listens to:
+### Listens to
 * home/curtains1/out/init - sets the initial state "UP" or "DOWN" (command output used by openhab)
 * home/curtains1/out - looks for "UP" or "DOWN" to drive the motor in correct direction (this links in with openhab command outputs)
 * home/curtains1/out/vars/motor_reverse - "true" or "false" initial setting to change motor direction if needed
 * home/curtains1/out/vars/reed_clicks - number of pulley revolutions required to open/close curtains
 * home/curtains1/out/vars/emergency_stop - timeout (ms) if no reed-switch pulse seen from lazy pulley
 
-### Outputs to:
+### Outputs to
 * home/curtains/in - position of curtains after move is successful
 * home/curtains/in/light_level - direct ADC read (0-1024)
 
-## Notes:
+## Notes
 
 LUA script found here, but mqtt.lua, wifi.lua and motorfunctions.lua all need to be byte compiled to .lc to work.  ESPLORER (or others) can handle this with ease.
 
@@ -33,7 +33,7 @@ On initial startup it doesn't know what position the curtains are in.  This can 
 - Write to /out/init topic to tell it it's position. 
 - Send a command to move - it will assume on the first move it gets you are aware of it's initial position, so will obey blindly.  Subsequent commands will only be actioned if it is the correct place to begin with (ie, it wont try to open if already open)
 
-### Pins:
+### Pins
 
 * H-bridge: motor a,  motor b, and motor en
 * Reed switch: connect between pin and ground (uses internal pullup and interrupt routine with debouncing)
