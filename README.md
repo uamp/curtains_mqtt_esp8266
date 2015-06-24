@@ -28,5 +28,5 @@ LUA script found here, but mqtt.lua, wifi.lua and motorfunctions.lua all need to
 Enter your SSID and MQTT server details and edit the pin definitions as necessary.
 
 On initial startup it doesn't know what position the curtains are in.  This can be combatted in two ways: 
-1 write to /out/init topic to tell it it's position. 
-2 Send a command to move - it will assume on the first move it gets you are aware of it's initial position, so will obey blindly.  Subsequent commands will only be actioned if it is the correct place to begin with (ie, it wont try to open if already open)
+1. Write to /out/init topic to tell it it's position. 
+2. Send a command to move - it will assume on the first move it gets you are aware of it's initial position, so will obey blindly.  Subsequent commands will only be actioned if it is the correct place to begin with (ie, it wont try to open if already open)
