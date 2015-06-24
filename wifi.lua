@@ -3,7 +3,6 @@
 -- Constants
 SSID    = "#################"
 APPWD   = "#################"
-CMDFILE = ""   -- File that is executed after connection
 
 -- Some control variables
 wifiTrys     = 0      -- Counter of trys to connect to wifi
@@ -15,8 +14,6 @@ wifi.sta.autoconnect(1)
 function launch()
   print("Connected to WIFI!")
   print("IP Address: " .. wifi.sta.getip())
-  -- Call our command file every minute.
-  --dofile(CMDFILE)
   dofile("mqtt.lc")
 end
 
