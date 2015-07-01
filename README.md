@@ -43,6 +43,8 @@ On initial startup it doesn't know what position the curtains are in.  This can 
 ### Hardware
 
 Hardware folder contains STL files for 3D printing for:
-* Driven pulley (motor mount, and pulley with key for motor) - fits common 12v high torque motor found on ebay 
+* Driven pulley (motor mount, and pulley with key for motor) - fits common 12v high torque motor found on ebay (picture found in the hardware folder for reference)
 * Lazy pulley (mount, pulley, and end cap) - to attach at the non-working end of the curtain rail
 * Lazy pulley with reed switch - allows for embeded reed switch to crudely detect rotational position
+
+Circuit diagrams to follow
