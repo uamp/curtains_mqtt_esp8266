@@ -17,7 +17,7 @@ Curtain controller using ESP8266, nodemcu and LUA script.  Primarily designed fo
 * home/curtains1/out - looks for "UP" or "DOWN" to drive the motor in correct direction (this links in with openhab command outputs)
 * home/curtains1/out/vars/motor_reverse - "true" or "false" initial setting to change motor direction if needed
 * home/curtains1/out/vars/reed_clicks - number of pulley revolutions required to open/close curtains
-* home/curtains1/out/vars/emergency_stop - timeout (ms) if no reed-switch pulse seen from lazy pulley
+* home/curtains1/out/vars/emergency_stop - timeout (ms) if no pulse seen from the reed-switch from the lazy pulley.  If there is no reed switch installed at all, then set this to the total time required to open (or close) the curtains - the motor will just run for that time period
 
 ### Outputs to
 * home/curtains/in - position of curtains after move is successful
@@ -43,6 +43,8 @@ On initial startup it doesn't know what position the curtains are in.  This can 
 ### Hardware
 
 Hardware folder contains STL files for 3D printing for:
-* Driven pulley (motor mount, and pulley with key for motor) - fits common 12v high torque motor found on ebay 
+* Driven pulley (motor mount, and pulley with key for motor) - fits common 12v high torque motor found on ebay (picture found in the hardware folder for reference)
 * Lazy pulley (mount, pulley, and end cap) - to attach at the non-working end of the curtain rail
 * Lazy pulley with reed switch - allows for embeded reed switch to crudely detect rotational position
+
+Circuit diagrams to follow
