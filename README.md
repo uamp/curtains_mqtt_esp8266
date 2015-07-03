@@ -47,4 +47,6 @@ Hardware folder contains STL files for 3D printing for:
 * Lazy pulley (mount, pulley, and end cap) - to attach at the non-working end of the curtain rail
 * Lazy pulley with reed switch - allows for embeded reed switch to crudely detect rotational position
 
-Circuit diagrams to follow
+Circuit folder contains schematic and bread board design. It also includes Fritzing file if you want to play/edit the circuit. No PCB layout as yet as mine ended up being built on vero board.  However, this can be made from the fritzing file.
+
+Note, the motor needs 12v, but the ESP needs 3.3v.  As it needs 700mA, best not to use a linear regulator to drop the voltage from 12v as it will get very hot.  I use a step down / buck converter which is bulkier, but more efficient.  You'll see the circuit leaves this blank for you to power as you like.
